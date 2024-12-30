@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CubeSolver</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+        <link rel="manifest" href="static/site.webmanifest"> 
+        <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+      </head>
+<body> 
+    <center>
+        <h3>Serracryn</h3>
+        <h1>Welcome to the Cube Solver</h1>
+        <h5>This app will show you how to solve a rubik's cube: all you have to do is upload a picture of it!</h5>
+    </center>
+
+    <h3>Please sign in to access imaging feature.</h5>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="code" placeholder="Code">
+    <button id="submit" onclick="submitUserData()">Submit</button>
+
+    <h3>Instructions to Solve the Cube</h3>
+    <h5>Click here to generate solving instructions</h5>
+    <input type="text" id="name" placeholder="Enter cube position" />
+    <button onclick="getGreeting()">Generate Instructions</button>
+    <p>Result: <span id="solve"></span></p>
+    
+
+    <div>
+        <h5>User data</h5>
+        <p id="user-Stuff" style="display:none;">Welcome back <span id="user-results"></span>!</p>
+        <p id="signed_in_user" style="display:none;">Welcome to your own rubik's cube AI!</p>
+        <h6>Thank you for signing in!</h6>
+    </div>
+
+    <div>
+        <center>
+            <p id="header1" style="display:none;">You have unlocked the Cube Solver - full access:<br>
+            Ready to see its true potential?</p>
+        </center>
+    </div>
+
+    <div id="hiddenContent" style="display:none;"> 
+        <center>
+            <h4>In this area, you will be able to generate predictions using our state of the art AI software, to determine 
+                what the colours of our cube are. Simply upload an image and the results will be displayed below!</h4>
+            <h5>You can upload an image here: Please note it may take 5-10 seconds to process.</h5>
+            <input type="file" id="fileInput" multiple accept="image/*">
+            <button id="uploadButton">Upload Image</button>
+            <div id="predictionResult">
+                <h4>Predictions: <span id=fileDisplay></span></h4>
+                <ul id="predictionList"></ul>
+                <h4>Predictions: <span id=prediction_display></span></h4>
+                <p id="prediction_results"></p>
+                <p>Completed results: <span id="total_results"></span></p>
+            </div>
+        </center>
+    </div>
+
+    <!-- <div class="top-right-logo"> 
+        <img src="static/favicon.ico" alt="Serracryn Logo"> 
+    </div> -->
+
+    <footer>Serracryn Technologies Inc. 2024</footer>
+    <script src="/static/js.js"></script>
+    <link rel="stylesheet" href="/static/css.css">
+</body>
+</html>

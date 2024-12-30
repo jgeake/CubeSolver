@@ -1,0 +1,36 @@
+body{
+    min-height: 100vh;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+footer {
+    position: relative; /* Use relative positioning for footer */
+    bottom: 0; /* Position footer at the bottom */
+    width: 100%; /* Make footer full width */
+    background-color: #f0f0f0; /* Optional: Add background color */
+    padding: 10px; /* Optional: Add padding */
+    text-align: center; /* Center text */
+  }
+
+#predictionResult {
+    margin-top: 20px;
+}
+
+#predictionList {
+    list-style: none;
+    padding: 0;
+}
+
+#predictionList li {
+    margin-bottom: 5px;
+}
+
+.top-right-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin: 10px; /* Adjust as needed */
+}
